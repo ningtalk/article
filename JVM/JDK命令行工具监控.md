@@ -63,5 +63,12 @@
 * 查看最大内存：jinfo -flag MaxHeapSize <pid>
 * 查看垃圾回收器：jinfo -flag UseG1GC <pid>;jinfo -flag UseParallelGC <pid>
 
+### jstat
+查看JVM统计信息。  
+#### 类装载
+jstat -class <pid>
+jstat -gc <pid> <interval> <times>:间隔interval(毫秒)，总输出times次  
+
+
 ## 参考
 * javase 7 docs:https://docs.oracle.com/javase/7/docs/technotes/tools/share/jps.html
