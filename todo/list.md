@@ -3,3 +3,4 @@
 * mysql分表
 * mysql数据类型对于java类型
 * java getResourceAsStream的使用方法
+* javax.validation.Validation
