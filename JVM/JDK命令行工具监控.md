@@ -70,5 +70,21 @@ jstat -class <pid>
 jstat -gc <pid> <interval> <times>:间隔interval(毫秒)，总输出times次  
 
 
+## 导出内存映射文件
+导出内存映射文件的方法主要有两种：一种是通过配置JVM运行参数；一种是通过`jmap`命令导出。  
+### 配置JVM参数导出
+该方式内存溢出时会自动导出：  
+`-XX:+HeapDumpOnOutOfMemoryError`  
+`-XX:HeapDumpPath=./`  
+
+### jmap
+使用jmap命令手动导出：  
+`jmap -dump:format=b, file=heap.hprof <pid>`  
+jmap命令的其他用法可查看参考里的文档。
+
+### MAT分析内存溢出
+工具（待完善）
+
+
 ## 参考
 * javase 7 docs:https://docs.oracle.com/javase/7/docs/technotes/tools/share/jps.html
