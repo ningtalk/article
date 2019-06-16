@@ -3,6 +3,7 @@
 
 ## 体系结构
 ![MySQL体系结构-摘自MySQL官方手册](https://github.com/npvip/article/blob/master/file/image/MySQL%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png)
+  
 从图中可见，MySQL Server结构从上自下主要有：  
 * 连接层
   - Connection Pool
